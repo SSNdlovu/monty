@@ -8,15 +8,15 @@
 void f_mul(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
-	int len = 0, aux;
+	int leng = 0, aux;
 
 	h = *head;
 	while (h)
 	{
 		h = h->next;
-		len++;
+		leng++;
 	}
-	if (len < 2)
+	if (leng < 2)
 	{
 		fprintf(stderr, "L%d: can't mul, stack too short\n", counter);
 		fclose(bus.file);

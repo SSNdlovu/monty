@@ -1,4 +1,13 @@
 #include "monty.h"
+#include <ctype.h>
+#include <sys/stat.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <unistd.h>
+
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
 * main - will interprete the monty code
